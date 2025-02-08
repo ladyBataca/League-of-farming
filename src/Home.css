@@ -1,0 +1,61 @@
+/* Base mobile-first styles */
+:root {
+  /* Define common variables for consistent spacing and breakpoints */
+  --spacing-unit: 8px;
+  --container-padding: 16px;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: var(--container-padding);
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: var(--spacing-unit) 0;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 768px) {
+  #root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Touch-friendly button styles */
+button {
+  min-height: 44px; /* Minimum touch target size */
+  min-width: 44px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  touch-action: manipulation; /* Optimize for touch */
+  -webkit-tap-highlight-color: transparent; /* Remove tap highlight on iOS */
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  padding: 2em;
+} 
