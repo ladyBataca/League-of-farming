@@ -1,11 +1,13 @@
 import './Home.css'
+import Resume from './components/Resume'
 
 function Home() {
   return (
-    <div className="min-h-screen bg-gray-100 p-4">
-      <h1 className="text-3xl font-bold text-center text-gray-800">
-        League of Farmers
-      </h1>
+    <div className="min-h-screen bg-red-100">
+      <Resume 
+        title="League of Farmers" 
+        playerName="Alma" 
+      />
     </div>
   )
 }
