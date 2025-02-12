@@ -38,7 +38,7 @@ const defaultBadges: BadgeItem[] = [
   {
     label: "Amor",
     icon: <FaHeart />,
-    total: 6,
+    total: 7,
     filled: 4,
     color: "text-red-500"
   },

@@ -12,8 +12,8 @@ interface StageListProps {
 
 const StageList: React.FC<StageListProps> = ({ stages }) => {
   return (
-    <div className="w-full px-2 border-2 border-gray-300 rounded-lg">
-      <div className="flex flex-col space-y-4 py-4">
+    <div className="w-full px-2">
+      <div className="flex flex-col space-y-4 py-4 pb-20">
         {stages.map((stage, index) => (
           <StageItem
             key={stage.title}
@@ -21,6 +21,7 @@ const StageList: React.FC<StageListProps> = ({ stages }) => {
             title={stage.title}
             completed={stage.completed}
             position={index % 2 === 0 ? 'right' : 'left'}
+            isLast={index === stages.length - 1}
           />
         ))}
       </div>
