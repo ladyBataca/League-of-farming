@@ -2,7 +2,7 @@
 :root {
   /* Define common variables for consistent spacing and breakpoints */
   --spacing-unit: 8px;
-  --container-padding: 16px;
+  --container-padding: 0px;
 }
 
 #root {
