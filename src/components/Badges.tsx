@@ -14,9 +14,9 @@ interface BadgesProps {
 
 const Badges = ({ items = defaultBadges }: BadgesProps) => {
   return (
-    <ul className="list-none p-0 w-full pt-1.5 pl-2">
+    <ul className="list-none p-0 w-full pt-1.5 pl-4">
       {items.map((item, idx) => (
-        <li key={idx} className="flex items-center mb-2 gap-1">
+        <li key={idx} className="flex items-center font-light">
           <span className="min-w-[80px] text-xl">{item.label}:</span>
           <div className="flex gap-1.5">
             {[...Array(item.total)].map((_, index) => (

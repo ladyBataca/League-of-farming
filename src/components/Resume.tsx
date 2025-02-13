@@ -12,11 +12,15 @@ const Resume = ({
 }: ResumeProps) => {
   return (
     <div className='bg-cyan-900 font-roboto'>
-      <h2 className="font-roboto text-white text-4xl font-light items-center justify-center text-center">{title}</h2>
+      <h1 className="text-white text-4xl font-extralight items-center justify-center text-center tracking-wide">{title}</h1>
       <div className="text-white w-full flex flex-row items-start py-2">
         <div className="flex flex-col items-start pl-2.5 min-w-[60px]">
-          <FaUser className="text-2xl mb-1" />
-          <span className="text-xs font-medium">{playerName}</span>
+          <div className="rounded-full bg-cyan-800 p-2 mb-1">
+            <FaUser className="h-8 w-8 text-2xl" />
+          </div>
+          <span className="text-xs w-full font-medium text-center block">
+            {playerName}
+          </span>
         </div>
         
         <Badges />
