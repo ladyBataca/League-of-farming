@@ -1,4 +1,4 @@
-import { FaHeart, FaSun, FaLeaf, FaTint } from 'react-icons/fa';
+import { FaHeart, FaSun, FaSeedling, FaWater } from 'react-icons/fa';
 
 interface BadgeItem {
   label: string;
@@ -22,7 +22,7 @@ const Badges = ({ items = defaultBadges }: BadgesProps) => {
             {[...Array(item.total)].map((_, index) => (
               <span
                 key={index}
-                className={index < item.filled ? item.color : "text-white"}
+                className={index < item.filled ? item.color : "text-gray-500"}
               >
                 {item.icon}
               </span>
@@ -51,14 +51,14 @@ const defaultBadges: BadgeItem[] = [
   },
   {
     label: "Abono",
-    icon: <FaLeaf />,
+    icon: <FaSeedling />,
     total: 2,
     filled: 1,
     color: "text-green-500"
   },
   {
     label: "Agua",
-    icon: <FaTint />,
+    icon: <FaWater />,
     total: 6,
     filled: 3,
     color: "text-blue-400"

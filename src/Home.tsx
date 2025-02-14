@@ -1,4 +1,6 @@
 import './Home.css'
+import { useState } from 'react'
+import Footer from './components/Footer';
 import Resume from './components/Resume'
 import StageList from './components/StageList'
 
@@ -7,69 +9,69 @@ const stages = [
   // Categoría Amor (7 títulos)
   {
     id: 1,
-    icon: "💚",
+    iconType: "sun",
     title: "El amor a la Naturaleza",
     completed: true
   },
   {
     id: 2,
-    icon: "💚",
+    iconType: "love",
     title: "Sembrando Amor",
     completed: true
   },
   {
     id: 3,
-    icon: "💚",
+    iconType: "love",
     title: "Raíces de Cariño",
     completed: true
   },
   {
     id: 4,
-    icon: "💚",
+    iconType: "seed",
     title: "Flores de Ternura",
     completed: true
   },
   {
     id: 5,
-    icon: "💚",
+    iconType: "love",
     title: "Amor que Germina",
     completed: true
   },
   {
     id: 6,
-    icon: "💚",
+    iconType: "love",
     title: "Corazón Verde",
     completed: true
   },
   {
     id: 7,
-    icon: "💚",
+    iconType: "water",
     title: "Latido de la Tierra",
-    completed: false
+    completed: true
   },
 
   // Categoría Sol (4 títulos)
   {
     id: 8,
-    icon: "☀️",
-    title: "El sol, el Dios de nuestros ancestros",
+    iconType: "love",
+    title: "Dios de nuestros ancestros",
     completed: false
   },
   {
     id: 9,
-    icon: "☀️",
+    iconType: "sun",
     title: "Luz Vital del Campo",
     completed: false
   },
   {
     id: 10,
-    icon: "☀️",
+    iconType: "sun",
     title: "Rayos de Innovación",
     completed: false
   },
   {
     id: 11,
-    icon: "☀️",
+    iconType: "sun",
     title: "Brillo que Alimenta",
     completed: false
   },
@@ -77,13 +79,13 @@ const stages = [
   // Categoría Abono (2 títulos)
   {
     id: 12,
-    icon: "🌱",
+    iconType: "seed",
     title: "Elixir de la Fertilidad",
     completed: false
   },
   {
     id: 13,
-    icon: "🌱",
+    iconType: "love",
     title: "Fertilizando el Futuro",
     completed: false
   },
@@ -91,37 +93,37 @@ const stages = [
   // Categoría Agua (6 títulos)
   {
     id: 14,
-    icon: "💧",
+    iconType: "water",
     title: "Ríos de Vida",
     completed: false
   },
   {
     id: 15,
-    icon: "💧",
+    iconType: "water",
     title: "La Danza del Agua",
     completed: false
   },
   {
     id: 16,
-    icon: "💧",
+    iconType: "water",
     title: "Lluvia que Renueva",
     completed: false
   },
   {
     id: 17,
-    icon: "💧",
+    iconType: "water",
     title: "Fuente de Inspiración",
     completed: false
   },
   {
     id: 18,
-    icon: "💧",
+    iconType: "water",
     title: "Cascada de Innovación",
     completed: false
   },
   {
     id: 19,
-    icon: "💧",
+    iconType: "love",
     title: "Oasis Verde",
     completed: false
   }
@@ -129,6 +131,8 @@ const stages = [
 
 
 function Home() {
+  const [currentStage, setCurrentStage] = useState(7)
+
   return (
     <>
       <Resume 
@@ -136,8 +140,9 @@ function Home() {
         playerName="Alma" 
       />
       <div className="h-full">
-        <StageList stages={stages} />
+        <StageList stages={stages} currentStage={currentStage} />
       </div>
+      <Footer />
     </>
 
   )
