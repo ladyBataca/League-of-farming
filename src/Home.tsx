@@ -1,8 +1,9 @@
 import './Home.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Footer from './components/Footer';
 import Resume from './components/Resume'
 import StageList from './components/StageList'
+import { useNavigate } from 'react-router-dom'
 
 // Define sample stages data
 const stages = [
@@ -132,12 +133,21 @@ const stages = [
 
 function Home() {
   const [currentStage, setCurrentStage] = useState(7)
+  const navigate = useNavigate()
+
+  // Redirect to onboarding if no player name is set
+  useEffect(() => {
+    const playerName = localStorage.getItem('playerName')
+    if (!playerName) {
+      navigate('/onboarding')
+    }
+  }, [navigate])
 
   return (
     <>
       <Resume 
         title="League of Farmers" 
-        playerName="Alma" 
+        playerName={localStorage.getItem('playerName') || 'Player'} 
       />
       <div className="h-full">
         <StageList stages={stages} currentStage={currentStage} />
