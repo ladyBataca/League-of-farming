@@ -1,12 +1,38 @@
 import { IoHomeSharp, IoDownloadOutline } from 'react-icons/io5';
 import { useNavigate } from 'react-router-dom';
 import html2canvas from 'html2canvas';
-import { useRef } from 'react';
+import { useRef, useEffect, useState } from 'react';
+import { getStages } from '../utils/stagesManager';
 const awardImageUrl = '/images/award.png';
 
 const Diploma = () => {
   const navigate = useNavigate();
   const diplomaRef = useRef<HTMLDivElement>(null);
+  const [allStagesCompleted, setAllStagesCompleted] = useState(false);
+  const [playerName, setPlayerName] = useState('');
+
+  // Check if all stages are completed
+  useEffect(() => {
+    // Get player name
+    const name = localStorage.getItem('playerName');
+    if (!name) {
+      navigate('/onboarding');
+      return;
+    }
+    setPlayerName(name);
+
+    // Check if all stages are completed
+    const stagesData = getStages();
+    const completed = stagesData.stages.every(stage => stage.completed);
+    
+    if (!completed) {
+      console.log('Not all stages are completed. Redirecting to home.');
+      navigate('/');
+      return;
+    }
+    
+    setAllStagesCompleted(true);
+  }, [navigate]);
 
   const downloadDiploma = async () => {
     if (diplomaRef.current) {
@@ -18,6 +44,17 @@ const Diploma = () => {
       link.click();
     }
   };
+
+  // Only render the diploma if all stages are completed
+  if (!allStagesCompleted) {
+    return (
+      <div className="min-h-screen bg-gray-100 flex justify-center items-center">
+        <div className="text-center p-8 bg-white rounded-lg shadow-md">
+          <h2 className="text-2xl font-light text-gray-800 mb-4">Cargando...</h2>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-100 p-2 flex justify-center">
@@ -45,7 +82,7 @@ const Diploma = () => {
           </p>
 
           <h2 className="text-4xl font-light text-green-600 my-6 tracking-wide">
-            Alma
+            {playerName}
           </h2>
 
           <p className="text-sm text-gray-700 tracking-wide px-4">

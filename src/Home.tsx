@@ -12,6 +12,7 @@ function Home() {
     return savedStage ? parseInt(savedStage, 10) : 0
   })
   const [stages, setStages] = useState<UIStage[]>([])
+  const [allStagesCompleted, setAllStagesCompleted] = useState(false)
   const navigate = useNavigate()
 
   // Save current stage to localStorage whenever it changes
@@ -37,8 +38,16 @@ function Home() {
       completed: stage.completed || false
     }));
     
+    // Check if all stages are completed
+    const completed = stagesData.stages.every(stage => stage.completed);
+    setAllStagesCompleted(completed);
+    
     setStages(formattedStages);
   }, [navigate])
+
+  const handleViewDiploma = () => {
+    navigate('/diploma');
+  };
 
   return (
     <>
@@ -48,6 +57,18 @@ function Home() {
       />
       <div className="h-full bg-gray-200">
         {stages.length > 0 && <StageList stages={stages} currentStage={currentStage} />}
+        
+        {/* Diploma button - only shown when all stages are completed */}
+        {allStagesCompleted && (
+          <div className="flex justify-center py-6">
+            <button
+              onClick={handleViewDiploma}
+              className="bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg shadow-md transition-colors flex items-center gap-2"
+            >
+              <span>🎓</span> Ver mi Diploma
+            </button>
+          </div>
+        )}
       </div>
       <Footer />
     </>

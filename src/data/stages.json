@@ -48,9 +48,9 @@
     },
     {
       "titulo": "Raíces de Cariño",
-      "tipo_insignia": "amor",
+      "tipo_insignia": "agua",
       "descripcion": "Explora la conexión emocional con las plantas.",
-      "palabra_magica": "Conexión",
+      "palabra_magica": "",
       "quiz": {
         "pregunta": "¿Cómo se fortalecen las raíces de las plantas?",
         "opciones": [
@@ -94,9 +94,9 @@
     },
     {
       "titulo": "Amor que Germina",
-      "tipo_insignia": "amor",
+      "tipo_insignia": "agua",
       "descripcion": "Comprende el proceso de germinación desde una perspectiva emocional.",
-      "palabra_magica": "Paciencia",
+      "palabra_magica": "",
       "quiz": {
         "pregunta": "¿Qué es la germinación?",
         "opciones": [
@@ -119,7 +119,7 @@
       "titulo": "Corazón Verde",
       "tipo_insignia": "amor",
       "descripcion": "Explora la pasión por la agricultura sostenible.",
-      "palabra_magica": "Sostenibilidad",
+      "palabra_magica": "",
       "quiz": {
         "pregunta": "¿Qué significa tener un 'corazón verde'?",
         "opciones": [
@@ -133,305 +133,6 @@
           },
           {
             "texto": "Preferir el color verde",
-            "es_correcta": false
-          }
-        ]
-      }
-    },
-    {
-      "titulo": "Latido de la Tierra",
-      "tipo_insignia": "agua",
-      "descripcion": "Siente el pulso de la naturaleza y su ritmo vital.",
-      "palabra_magica": "Armonía",
-      "quiz": {
-        "pregunta": "¿Qué representa el 'latido de la tierra'?",
-        "opciones": [
-          {
-            "texto": "Los terremotos",
-            "es_correcta": false
-          },
-          {
-            "texto": "Los ciclos naturales y el ritmo de la vida",
-            "es_correcta": true
-          },
-          {
-            "texto": "El sonido del viento",
-            "es_correcta": false
-          }
-        ]
-      }
-    },
-    {
-      "titulo": "Dios de nuestros ancestros",
-      "tipo_insignia": "amor",
-      "descripcion": "Conoce las tradiciones agrícolas ancestrales y su conexión espiritual.",
-      "palabra_magica": "Tradición",
-      "quiz": {
-        "pregunta": "¿Por qué son importantes las tradiciones agrícolas ancestrales?",
-        "opciones": [
-          {
-            "texto": "No son importantes en la agricultura moderna",
-            "es_correcta": false
-          },
-          {
-            "texto": "Contienen sabiduría acumulada durante generaciones",
-            "es_correcta": true
-          },
-          {
-            "texto": "Solo son importantes para los museos",
-            "es_correcta": false
-          }
-        ]
-      }
-    },
-    {
-      "titulo": "Luz Vital del Campo",
-      "tipo_insignia": "sol",
-      "descripcion": "Aprende sobre la importancia del sol en la agricultura.",
-      "palabra_magica": "Energía",
-      "quiz": {
-        "pregunta": "¿Por qué es esencial el sol para las plantas?",
-        "opciones": [
-          {
-            "texto": "Para la fotosíntesis y producción de energía",
-            "es_correcta": true
-          },
-          {
-            "texto": "Solo para que se vean bonitas",
-            "es_correcta": false
-          },
-          {
-            "texto": "El sol no es esencial para las plantas",
-            "es_correcta": false
-          }
-        ]
-      }
-    },
-    {
-      "titulo": "Rayos de Innovación",
-      "tipo_insignia": "sol",
-      "descripcion": "Descubre las nuevas tecnologías solares en la agricultura.",
-      "palabra_magica": "Innovación",
-      "quiz": {
-        "pregunta": "¿Cómo se utiliza la energía solar en la agricultura moderna?",
-        "opciones": [
-          {
-            "texto": "No se utiliza en absoluto",
-            "es_correcta": false
-          },
-          {
-            "texto": "Para alimentar sistemas de riego, invernaderos y más",
-            "es_correcta": true
-          },
-          {
-            "texto": "Solo para iluminar los campos por la noche",
-            "es_correcta": false
-          }
-        ]
-      }
-    },
-    {
-      "titulo": "Brillo que Alimenta",
-      "tipo_insignia": "sol",
-      "descripcion": "Comprende cómo la luz solar se transforma en alimento.",
-      "palabra_magica": "Fotosíntesis",
-      "quiz": {
-        "pregunta": "¿Qué es la fotosíntesis?",
-        "opciones": [
-          {
-            "texto": "Un tipo de fertilizante",
-            "es_correcta": false
-          },
-          {
-            "texto": "El proceso por el cual las plantas convierten la luz en energía",
-            "es_correcta": true
-          },
-          {
-            "texto": "Una enfermedad de las plantas",
-            "es_correcta": false
-          }
-        ]
-      }
-    },
-    {
-      "titulo": "Elixir de la Fertilidad",
-      "tipo_insignia": "abono",
-      "descripcion": "Aprende sobre los diferentes tipos de abonos y su importancia.",
-      "palabra_magica": "Nutrientes",
-      "quiz": {
-        "pregunta": "¿Por qué es importante el abono en la agricultura?",
-        "opciones": [
-          {
-            "texto": "Solo mejora la apariencia de la tierra",
-            "es_correcta": false
-          },
-          {
-            "texto": "Proporciona nutrientes esenciales para el crecimiento de las plantas",
-            "es_correcta": true
-          },
-          {
-            "texto": "No es importante, es solo una moda",
-            "es_correcta": false
-          }
-        ]
-      }
-    },
-    {
-      "titulo": "Fertilizando el Futuro",
-      "tipo_insignia": "amor",
-      "descripcion": "Explora prácticas sostenibles de fertilización para un futuro mejor.",
-      "palabra_magica": "Sustentabilidad",
-      "quiz": {
-        "pregunta": "¿Qué es la fertilización sostenible?",
-        "opciones": [
-          {
-            "texto": "Usar la mayor cantidad posible de fertilizantes",
-            "es_correcta": false
-          },
-          {
-            "texto": "Prácticas que nutren el suelo sin dañar el medio ambiente",
-            "es_correcta": true
-          },
-          {
-            "texto": "No usar ningún tipo de fertilizante",
-            "es_correcta": false
-          }
-        ]
-      }
-    },
-    {
-      "titulo": "Ríos de Vida",
-      "tipo_insignia": "agua",
-      "descripcion": "Descubre la importancia de los ríos en los ecosistemas agrícolas.",
-      "palabra_magica": "Flujo",
-      "quiz": {
-        "pregunta": "¿Por qué son importantes los ríos para la agricultura?",
-        "opciones": [
-          {
-            "texto": "Solo son importantes para la pesca",
-            "es_correcta": false
-          },
-          {
-            "texto": "Proporcionan agua para riego y transportan nutrientes",
-            "es_correcta": true
-          },
-          {
-            "texto": "No tienen ninguna relación con la agricultura",
-            "es_correcta": false
-          }
-        ]
-      }
-    },
-    {
-      "titulo": "La Danza del Agua",
-      "tipo_insignia": "agua",
-      "descripcion": "Aprende sobre los ciclos del agua y su influencia en la agricultura.",
-      "palabra_magica": "Ciclo",
-      "quiz": {
-        "pregunta": "¿Qué es el ciclo del agua?",
-        "opciones": [
-          {
-            "texto": "El proceso de evaporación, condensación y precipitación",
-            "es_correcta": true
-          },
-          {
-            "texto": "Un tipo de riego",
-            "es_correcta": false
-          },
-          {
-            "texto": "Un baile tradicional de agricultores",
-            "es_correcta": false
-          }
-        ]
-      }
-    },
-    {
-      "titulo": "Lluvia que Renueva",
-      "tipo_insignia": "agua",
-      "descripcion": "Comprende el impacto de la lluvia en la renovación de los cultivos.",
-      "palabra_magica": "Renovación",
-      "quiz": {
-        "pregunta": "¿Cómo beneficia la lluvia a los cultivos?",
-        "opciones": [
-          {
-            "texto": "Solo los daña",
-            "es_correcta": false
-          },
-          {
-            "texto": "Proporciona agua y ayuda a limpiar las plantas",
-            "es_correcta": true
-          },
-          {
-            "texto": "No tiene ningún efecto",
-            "es_correcta": false
-          }
-        ]
-      }
-    },
-    {
-      "titulo": "Fuente de Inspiración",
-      "tipo_insignia": "agua",
-      "descripcion": "Explora cómo el agua ha inspirado innovaciones en la agricultura.",
-      "palabra_magica": "Inspiración",
-      "quiz": {
-        "pregunta": "¿Qué innovaciones agrícolas se han inspirado en el agua?",
-        "opciones": [
-          {
-            "texto": "Sistemas de riego por goteo y hidroponía",
-            "es_correcta": true
-          },
-          {
-            "texto": "Tractores y cosechadoras",
-            "es_correcta": false
-          },
-          {
-            "texto": "Ninguna innovación se ha inspirado en el agua",
-            "es_correcta": false
-          }
-        ]
-      }
-    },
-    {
-      "titulo": "Cascada de Innovación",
-      "tipo_insignia": "agua",
-      "descripcion": "Conoce las últimas tecnologías de gestión del agua en la agricultura.",
-      "palabra_magica": "Tecnología",
-      "quiz": {
-        "pregunta": "¿Qué tecnologías modernas ayudan a gestionar el agua en la agricultura?",
-        "opciones": [
-          {
-            "texto": "No existen tales tecnologías",
-            "es_correcta": false
-          },
-          {
-            "texto": "Sensores de humedad, sistemas de riego inteligentes y análisis de datos",
-            "es_correcta": true
-          },
-          {
-            "texto": "Solo los calendarios lunares",
-            "es_correcta": false
-          }
-        ]
-      }
-    },
-    {
-      "titulo": "Oasis Verde",
-      "tipo_insignia": "amor",
-      "descripcion": "Descubre cómo crear espacios de cultivo sostenibles en entornos desafiantes.",
-      "palabra_magica": "Resiliencia",
-      "quiz": {
-        "pregunta": "¿Qué es un oasis en términos agrícolas?",
-        "opciones": [
-          {
-            "texto": "Un espacio fértil en medio de condiciones adversas",
-            "es_correcta": true
-          },
-          {
-            "texto": "Un tipo de planta",
-            "es_correcta": false
-          },
-          {
-            "texto": "Un sistema de riego antiguo",
             "es_correcta": false
           }
         ]
