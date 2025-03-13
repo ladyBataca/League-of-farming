@@ -1,0 +1,142 @@
+{
+  "stages": [
+    {
+      "titulo": "El amor a la Naturaleza",
+      "tipo_insignia": "sol",
+      "descripcion": "Descubre la importancia de amar y respetar la naturaleza.",
+      "palabra_magica": "Respeto",
+      "quiz": {
+        "pregunta": "¿Por qué es importante amar la naturaleza?",
+        "opciones": [
+          {
+            "texto": "Porque nos proporciona recursos para vivir",
+            "es_correcta": true
+          },
+          {
+            "texto": "No es importante",
+            "es_correcta": false
+          },
+          {
+            "texto": "Solo es importante para los agricultores",
+            "es_correcta": false
+          }
+        ]
+      }
+    },
+    {
+      "titulo": "Sembrando Amor",
+      "tipo_insignia": "amor",
+      "descripcion": "Aprende cómo el amor puede transformar la agricultura.",
+      "palabra_magica": "Cuidado",
+      "quiz": {
+        "pregunta": "¿Qué significa sembrar con amor?",
+        "opciones": [
+          {
+            "texto": "Usar fertilizantes caros",
+            "es_correcta": false
+          },
+          {
+            "texto": "Cuidar cada detalle del proceso de siembra",
+            "es_correcta": true
+          },
+          {
+            "texto": "Sembrar solo cuando estamos felices",
+            "es_correcta": false
+          }
+        ]
+      }
+    },
+    {
+      "titulo": "Raíces de Cariño",
+      "tipo_insignia": "agua",
+      "descripcion": "Explora la conexión emocional con las plantas.",
+      "palabra_magica": "",
+      "quiz": {
+        "pregunta": "¿Cómo se fortalecen las raíces de las plantas?",
+        "opciones": [
+          {
+            "texto": "Con agua y nutrientes adecuados",
+            "es_correcta": true
+          },
+          {
+            "texto": "Hablándoles todos los días",
+            "es_correcta": false
+          },
+          {
+            "texto": "Con música clásica",
+            "es_correcta": false
+          }
+        ]
+      }
+    },
+    {
+      "titulo": "Flores de Ternura",
+      "tipo_insignia": "abono",
+      "descripcion": "Descubre cómo la ternura influye en el crecimiento de las flores.",
+      "palabra_magica": "Delicadeza",
+      "quiz": {
+        "pregunta": "¿Qué necesitan las flores para crecer saludables?",
+        "opciones": [
+          {
+            "texto": "Solo agua",
+            "es_correcta": false
+          },
+          {
+            "texto": "Luz, agua y nutrientes balanceados",
+            "es_correcta": true
+          },
+          {
+            "texto": "Mucho fertilizante",
+            "es_correcta": false
+          }
+        ]
+      }
+    },
+    {
+      "titulo": "Amor que Germina",
+      "tipo_insignia": "agua",
+      "descripcion": "Comprende el proceso de germinación desde una perspectiva emocional.",
+      "palabra_magica": "",
+      "quiz": {
+        "pregunta": "¿Qué es la germinación?",
+        "opciones": [
+          {
+            "texto": "El proceso de florecimiento",
+            "es_correcta": false
+          },
+          {
+            "texto": "El proceso donde la semilla comienza a crecer",
+            "es_correcta": true
+          },
+          {
+            "texto": "La cosecha de los frutos",
+            "es_correcta": false
+          }
+        ]
+      }
+    },
+    {
+      "titulo": "Corazón Verde",
+      "tipo_insignia": "amor",
+      "descripcion": "Explora la pasión por la agricultura sostenible.",
+      "palabra_magica": "",
+      "quiz": {
+        "pregunta": "¿Qué significa tener un 'corazón verde'?",
+        "opciones": [
+          {
+            "texto": "Tener un corazón enfermo",
+            "es_correcta": false
+          },
+          {
+            "texto": "Ser apasionado por la ecología y el medio ambiente",
+            "es_correcta": true
+          },
+          {
+            "texto": "Preferir el color verde",
+            "es_correcta": false
+          }
+        ]
+      }
+    }
+  ]
+}

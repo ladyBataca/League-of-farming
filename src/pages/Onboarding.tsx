@@ -30,10 +30,10 @@ function Onboarding() {
   return (
     <div className="min-h-screen flex flex-col">
       <div className="flex-1 flex flex-col items-center justify-center p-4">
-        <h1 className="text-3xl font-light text-center text-white mb-8">
+        <h1 className="text-3xl font-light text-center text-black mb-8">
           Bienvenido al Bootcamp Huertic's
         </h1>
-        <p className="text-sm text-center text-white mb-8">
+        <p className="text-sm text-center text-black mb-8">
           Requerimos de tu nombre para continuar.
         </p>
         <form onSubmit={handleSubmit} className="w-full max-w-md space-y-4">

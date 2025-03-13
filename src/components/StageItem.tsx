@@ -1,4 +1,5 @@
 import { FaLock, FaCheck, FaHeart, FaSun, FaSeedling, FaWater, FaPencilAlt } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 interface StageItemProps {
   iconType: string;
@@ -11,6 +12,8 @@ interface StageItemProps {
 }
 
 const StageItem: React.FC<StageItemProps> = ({ iconType, title, completed, position, isLast = false, currentStage, index}) => {
+  const navigate = useNavigate();
+  
   const shouldBeEnabled = completed || currentStage == index;
   const getIcon = (type: string) => {    
     switch (type) {
@@ -41,8 +44,13 @@ const StageItem: React.FC<StageItemProps> = ({ iconType, title, completed, posit
       </div>
       
       {/* Content Card */}
-      <div className="flex-grow">
-        <div className={`rounded-lg shadow-md p-4 w-full ${shouldBeEnabled ? 'bg-white' : 'bg-gray-600'}`}>
+      <div className="flex-grow" onClick={() => {
+        // Only navigate if the stage is enabled (completed or current)
+        if (shouldBeEnabled) {
+          navigate(`/stage/${index + 1}`);
+        }
+      }}>
+        <div className={`rounded-lg shadow-md p-4 w-full ${shouldBeEnabled ? 'bg-white hover:bg-gray-100 cursor-pointer' : 'bg-gray-600'}`}>
           <h3 className={`text-lg font-light ${shouldBeEnabled ? 'text-black' : 'text-white'}`}>{title}</h3>
           <p className={`flex items-center font-light text-xs ${shouldBeEnabled ? 'text-black' : 'text-white'}`}>
             {shouldBeEnabled ? completed ?

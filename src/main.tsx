@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './Home'
 import Diploma from './pages/Diploma'
 import Onboarding from './pages/Onboarding'
+import StageDetail from './pages/StageDetail'
 import './styles/global.css'
 import './index.css'
 
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: '/diploma',
     element: <Diploma />
+  },
+  {
+    path: '/stage/:stageId',
+    element: <StageDetail />
   }
 ])
 
