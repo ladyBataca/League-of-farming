@@ -1,6 +1,7 @@
 import StageItem from "./StageItem";
 
-interface Stage {
+// Using the UI-specific stage interface
+export interface UIStage {
   id: number;
   iconType: string;
   title: string;
@@ -8,11 +9,12 @@ interface Stage {
 }
 
 interface StageListProps {
-  stages: Stage[];
+  stages: UIStage[];
   currentStage: number;
 }
 
 const StageList: React.FC<StageListProps> = ({ stages, currentStage }) => {
+  console.log(`Current stage: ${currentStage} `);
   return (
     <div className="w-full px-2">
       <div className="flex flex-col space-y-4 py-4 pb-2">
