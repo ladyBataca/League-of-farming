@@ -13,6 +13,7 @@ function StageDetail() {
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
+  const [isStageCompleted, setIsStageCompleted] = useState(false);
 
   useEffect(() => {
     // Redirect to onboarding if no player name is set
@@ -35,6 +36,20 @@ function StageDetail() {
         
         if (stageIsCompleted || stageIsCurrent) {
           setStage(stagesData.stages[stageIndex]);
+          setIsStageCompleted(stagesData.stages[stageIndex].completed || false);
+          
+          // If stage is completed, set the correct values for review
+          if (stagesData.stages[stageIndex].completed) {
+            if (stagesData.stages[stageIndex].palabra_magica) {
+              setMagicWord(stagesData.stages[stageIndex].palabra_magica);
+            }
+            if (stagesData.stages[stageIndex].quiz) {
+              const correctOptionIndex = stagesData.stages[stageIndex].quiz.opciones.findIndex(option => option.es_correcta);
+              if (correctOptionIndex !== -1) {
+                setSelectedOption(correctOptionIndex);
+              }
+            }
+          }
         } else {
           // Stage exists but is not accessible yet, redirect to home
           console.log('Unauthorized access to stage:', stageId);
@@ -162,11 +177,11 @@ function StageDetail() {
         playerName={localStorage.getItem('playerName') || 'Player'} 
       />
       <div className="flex-1 flex flex-col items-center p-4">
-        <h1 className="text-3xl font-light text-center text-white mb-4">
+        <h1 className="text-3xl font-light text-center text-black dark:text-white mb-4">
           {stage.titulo}
         </h1>
-        <div className="text-xl font-medium text-center text-white mb-4">
-          <p className="text-white mb-4">{stage.descripcion}</p>
+        <div className="text-xl font-medium text-center text-black dark:text-white mb-4">
+          <p className="text-black dark:text-white mb-4">{stage.descripcion}</p>
         </div>
         <div className="text-6xl mb-6">
           {getIcon(stage.tipo_insignia)}
@@ -187,32 +202,42 @@ function StageDetail() {
                 type="text"
                 id="magicWord"
                 value={magicWord}
-                onChange={(e) => setMagicWord(e.target.value)}
-                className="w-full text-black px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                onChange={(e) => !isStageCompleted && setMagicWord(e.target.value)}
+                disabled={isStageCompleted}
+                className={`w-full text-black px-4 py-2 border rounded-md ${
+                  isStageCompleted 
+                    ? 'bg-gray-100 border-gray-300 cursor-not-allowed' 
+                    : 'border-gray-300 focus:ring-green-500 focus:border-green-500'
+                }`}
                 placeholder="Palabra mágica"
               />
               <button
                 onClick={handleMagicWordSubmit}
-                className="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition-colors"
+                disabled={isStageCompleted}
+                className={`w-full py-2 px-4 rounded-md transition-colors ${
+                  isStageCompleted
+                    ? 'bg-gray-400 text-white cursor-not-allowed'
+                    : 'bg-green-600 text-white hover:bg-green-700'
+                }`}
               >
-                Validar palabra mágica
+                {isStageCompleted ? 'Etapa completada' : 'Validar palabra mágica'}
               </button>
             </div>
           )}
           
           {!stage.palabra_magica && stage.quiz && (
             <div className="space-y-4 mt-6">
-              <p className="font-medium text-black">{stage.quiz.pregunta}</p>
+              <p className="font-medium text-black dark:text-white">{stage.quiz.pregunta}</p>
               <div className="space-y-2">
                 {stage.quiz.opciones.map((option, index) => (
                   <div 
                     key={index}
-                    onClick={() => setSelectedOption(index)}
-                    className={`p-3 border rounded-md cursor-pointer ${
+                    className={`p-3 border rounded-md ${
                       selectedOption === index 
                         ? 'border-green-500 bg-green-50' 
-                        : 'border-gray-300 hover:border-green-300'
-                    }`}
+                        : 'border-gray-300 dark:border-gray-600 ' + (isStageCompleted ? '' : 'hover:border-green-300')
+                    } ${isStageCompleted ? 'cursor-not-allowed opacity-80' : 'cursor-pointer'}`}
+                    onClick={isStageCompleted ? undefined : () => setSelectedOption(index)}
                   >
                     <p className="text-black">{option.texto}</p>
                   </div>
@@ -220,14 +245,14 @@ function StageDetail() {
               </div>
               <button
                 onClick={handleQuizSubmit}
-                disabled={selectedOption === null}
+                disabled={selectedOption === null || isStageCompleted}
                 className={`w-full py-2 px-4 rounded-md transition-colors ${
-                  selectedOption === null
+                  selectedOption === null || isStageCompleted
                     ? 'bg-gray-400 text-white cursor-not-allowed'
                     : 'bg-green-600 text-white hover:bg-green-700'
                 }`}
               >
-                Validar respuesta
+                {isStageCompleted ? 'Etapa completada' : 'Validar respuesta'}
               </button>
             </div>
           )}
@@ -235,9 +260,14 @@ function StageDetail() {
           {!stage.palabra_magica && !stage.quiz && (
             <button
               onClick={handleFinishStage}
-              className="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition-colors mt-4"
+              disabled={isStageCompleted}
+              className={`w-full py-2 px-4 rounded-md transition-colors mt-4 ${
+                isStageCompleted
+                  ? 'bg-gray-400 text-white cursor-not-allowed'
+                  : 'bg-green-600 text-white hover:bg-green-700'
+              }`}
             >
-              Finalizar esta etapa
+              {isStageCompleted ? 'Etapa completada' : 'Finalizar esta etapa'}
             </button>
           )}
           
