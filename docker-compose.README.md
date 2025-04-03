@@ -26,8 +26,8 @@ sudo docker compose up app --build
 
 This will:
 - Build the application using the production Dockerfile
-- Serve the built application on port 3000
-- Make the application available at http://localhost:3000
+- Serve the built application on port 5000
+- Make the application available at http://localhost:5000
 
 ### Development Mode
 
@@ -40,7 +40,7 @@ sudo docker compose up dev --build
 This will:
 - Mount your local code into the container
 - Run the Vite development server with hot-reloading
-- Make the application available at http://localhost:3000
+- Make the application available at http://localhost:5000
 
 ## Running Only One Service
 
@@ -95,7 +95,7 @@ The Docker Compose configuration includes the following environment variables:
 
 ### Port Conflicts
 
-If you encounter port conflicts (e.g., "port is already allocated"), ensure that no other service is using port 3000 on your host machine.
+If you encounter port conflicts (e.g., "port is already allocated"), ensure that no other service is using port 5000 on your host machine.
 
 ### Container Logs
 

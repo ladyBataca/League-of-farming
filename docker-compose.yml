@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
     container_name: league-of-farming
     ports:
-      - "3000:3000"
+      - "5000:5000"
     # Don't mount the dist directory as it will be built inside the container
     volumes:
       - /app/node_modules
@@ -21,7 +21,7 @@ services:
       dockerfile: Dockerfile.dev
     container_name: league-of-farming-dev
     ports:
-      - "3000:3000"
+      - "5000:5000"
     volumes:
       - ./:/app
       - /app/node_modules
