@@ -227,7 +227,7 @@ function StageDetail() {
           
           {!stage.palabra_magica && stage.quiz && (
             <div className="space-y-4 mt-6">
-              <p className="font-medium text-black dark:text-white">{stage.quiz.pregunta}</p>
+              <p className="font-medium text-black">{stage.quiz.pregunta}</p>
               <div className="space-y-2">
                 {stage.quiz.opciones.map((option, index) => (
                   <div 
