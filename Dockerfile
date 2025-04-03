@@ -14,9 +14,9 @@ RUN npm run build
 RUN npm install -g serve
 
 # Expose the port
-EXPOSE 3000
+EXPOSE 5000
 
 # Start the app using serve with explicit host binding
 # Use the -s flag to serve the single-page application
 # The -S flag disables directory listing
-CMD ["serve", "-s", "-S", "dist", "-l", "tcp://0.0.0.0:3000"]
+CMD ["serve", "-s", "-S", "dist", "-l", "tcp://0.0.0.0:5000"]
