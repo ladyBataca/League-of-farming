@@ -30,15 +30,15 @@ function Onboarding() {
   return (
     <div className="min-h-screen flex flex-col">
       <div className="flex-1 flex flex-col items-center justify-center p-4">
-        <h1 className="text-3xl font-light text-center text-black mb-8">
+        <h1 className="text-3xl font-light text-center text-black dark:text-white mb-8">
           Bienvenido al Bootcamp Huertic's
         </h1>
-        <p className="text-sm text-center text-black mb-8">
+        <p className="text-sm text-center text-black dark:text-white mb-8">
           Requerimos de tu nombre para continuar.
         </p>
         <form onSubmit={handleSubmit} className="w-full max-w-md space-y-4">
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
               Nombre del Jugador *
             </label>
             <input
@@ -48,13 +48,13 @@ function Onboarding() {
               required
               value={formData.name}
               onChange={handleChange}
-              className="w-full text-black px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+              className="w-full text-black dark:text-white px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-green-500 focus:border-green-500 dark:bg-gray-800"
               placeholder="Ingresa tu nombre de jugador"
             />
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
               Correo (opcional)
             </label>
             <input
@@ -63,13 +63,13 @@ function Onboarding() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full text-black px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+              className="w-full text-black dark:text-white px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-green-500 focus:border-green-500 dark:bg-gray-800"
               placeholder="Ingresa tu correo electrónico"
             />
           </div>
 
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="phone" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
               Teléfono (opcional)
             </label>
             <input
@@ -78,7 +78,7 @@ function Onboarding() {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full text-black px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+              className="w-full text-black dark:text-white px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-green-500 focus:border-green-500 dark:bg-gray-800"
               placeholder="Ingresa tu número telefónico"
             />
           </div>
