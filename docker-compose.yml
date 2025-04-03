@@ -1,0 +1,33 @@
+services:
+  # Production service - builds and serves the application
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: league-of-farming
+    ports:
+      - "3000:3000"
+    # Don't mount the dist directory as it will be built inside the container
+    volumes:
+      - /app/node_modules
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+
+  # Development service with hot-reloading
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: league-of-farming-dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - VITE_HOST=0.0.0.0
+    command: npm run dev
+    stdin_open: true
+    tty: true
