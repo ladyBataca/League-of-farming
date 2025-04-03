@@ -1,142 +1,208 @@
 {
   "stages": [
     {
-      "titulo": "El amor a la Naturaleza",
-      "tipo_insignia": "sol",
-      "descripcion": "Descubre la importancia de amar y respetar la naturaleza.",
-      "palabra_magica": "Respeto",
-      "quiz": {
-        "pregunta": "¿Por qué es importante amar la naturaleza?",
-        "opciones": [
-          {
-            "texto": "Porque nos proporciona recursos para vivir",
-            "es_correcta": true
-          },
-          {
-            "texto": "No es importante",
-            "es_correcta": false
-          },
-          {
-            "texto": "Solo es importante para los agricultores",
-            "es_correcta": false
-          }
-        ]
-      }
-    },
-    {
-      "titulo": "Sembrando Amor",
+      "titulo": "Descubriendo la semilla mágica",
       "tipo_insignia": "amor",
-      "descripcion": "Aprende cómo el amor puede transformar la agricultura.",
-      "palabra_magica": "Cuidado",
+      "descripcion": "Una semilla es el origen, por eso para poder sembrarla necesitas intencionar y darle superpoderes como el del amor.",
+      "instrucciones":"Ingresa la palabra mágica que tienes en tu pergamino e intenciona tu semilla para pasar al siguiente nivel Cuando pases el nivel dirígete al Teatrino.",
+      "palabra_magica": "origen",
       "quiz": {
-        "pregunta": "¿Qué significa sembrar con amor?",
-        "opciones": [
-          {
-            "texto": "Usar fertilizantes caros",
-            "es_correcta": false
-          },
-          {
-            "texto": "Cuidar cada detalle del proceso de siembra",
-            "es_correcta": true
-          },
-          {
-            "texto": "Sembrar solo cuando estamos felices",
-            "es_correcta": false
-          }
-        ]
+        "pregunta": "",
+        "opciones": []
       }
     },
     {
-      "titulo": "Raíces de Cariño",
-      "tipo_insignia": "agua",
-      "descripcion": "Explora la conexión emocional con las plantas.",
-      "palabra_magica": "",
-      "quiz": {
-        "pregunta": "¿Cómo se fortalecen las raíces de las plantas?",
-        "opciones": [
-          {
-            "texto": "Con agua y nutrientes adecuados",
-            "es_correcta": true
-          },
-          {
-            "texto": "Hablándoles todos los días",
-            "es_correcta": false
-          },
-          {
-            "texto": "Con música clásica",
-            "es_correcta": false
-          }
-        ]
-      }
-    },
-    {
-      "titulo": "Flores de Ternura",
+      "titulo": "Sembrando mi semilla",
       "tipo_insignia": "abono",
-      "descripcion": "Descubre cómo la ternura influye en el crecimiento de las flores.",
-      "palabra_magica": "Delicadeza",
+      "descripcion": "Sembrar en buen abono me garantiza que la semilla germine bonito.",
+      "instrucciones":"Sigue a tu mentor y diviértete abonando tu semilla mágica; cuando descubras lo que te trajo la siembra vuelve acá e ingresa la palabra mágica para avanzar. Luego dirigete la sala de los inventos.",
+      "palabra_magica": "Ikigai",
       "quiz": {
-        "pregunta": "¿Qué necesitan las flores para crecer saludables?",
-        "opciones": [
-          {
-            "texto": "Solo agua",
-            "es_correcta": false
-          },
-          {
-            "texto": "Luz, agua y nutrientes balanceados",
-            "es_correcta": true
-          },
-          {
-            "texto": "Mucho fertilizante",
-            "es_correcta": false
-          }
-        ]
+        "pregunta": "",
+        "opciones": []
       }
     },
     {
-      "titulo": "Amor que Germina",
+      "titulo": "Regando mi semilla",
       "tipo_insignia": "agua",
-      "descripcion": "Comprende el proceso de germinación desde una perspectiva emocional.",
+      "descripcion": "El agua despierta la semilla y la innovación social nos va a despertar el inventor que tenemos dentro.",
+      "instrucciones":"Recibe el conocimiento que tu mentor tiene para ti en este nivel. Disfruta explorando tu habilidades tech y nutre tu creatividad. Luego, vuelve al juego e ingresa la palabra magica que descubriste; si es la correcta, avanzarás al siguiente nivel.",
+      "palabra_magica": "idf.py build",
+      "quiz": {
+        "pregunta": "",
+        "opciones": []
+      }
+    },
+    {
+      "titulo": "Amor para germinar",
+      "tipo_insignia": "amor",
+      "descripcion": "El amor es la clave para que una semilla germine. En este nivel, cultivaremos el amor propio como el mejor impulso para nuestro crecimiento.",
+     "instrucciones":"Creemos un espacio de amor en la huerta de la innovación y regresa cuando estes listo con la palabra mágica para avanzar al siguiente nivel.",
+      "palabra_magica": "Reconozcamonos",
+      "quiz": {
+        "pregunta": "",
+        "opciones": []
+      }
+    },
+    {
+      "titulo": "Aguita para germinar",
+      "tipo_insignia": "agua",
+      "descripcion": "El agua hace que la semilla se expanda hasta romper su cubierta. Hoy romperemos las barreras de nuestra imaginación y descubriremos hasta dónde podemos llegar.",
+      "instrucciones":"Recibe las gotas de conocimiento que tu mentor tiene para ti en este nivel y atrévete a romper las barreras de lo que creías imposible. Luego, regresa con tu nuevo aprendizaje y responde la pregunta para avanzar.",
       "palabra_magica": "",
       "quiz": {
-        "pregunta": "¿Qué es la germinación?",
+        "pregunta": "¿Cómo mide la humedad del suelo un sensor capacitivo?",
         "opciones": [
-          {
-            "texto": "El proceso de florecimiento",
-            "es_correcta": false
-          },
-          {
-            "texto": "El proceso donde la semilla comienza a crecer",
-            "es_correcta": true
-          },
-          {
-            "texto": "La cosecha de los frutos",
-            "es_correcta": false
-          }
+          { "texto": "Midiendo la resistencia eléctrica entre dos electrodos metálicos insertados en el suelo.", "es_correcta": false },
+          { "texto": "Midiendo los cambios en la capacitancia dieléctrica del suelo.", "es_correcta": true },
+          { "texto": "Midiendo la temperatura del suelo y calculando la humedad basándose en la diferencia térmica.", "es_correcta": false }
         ]
       }
     },
     {
-      "titulo": "Corazón Verde",
+      "titulo": "Rayos de sol para germinar",
+      "tipo_insignia": "sol",
+      "descripcion": "El sol le dice a la semilla que es hora de crecer. Hoy entregaremos esos primeros rayos para que echen raíces tus nuevos conocimientos en sostenibilidad.",
+      "instrucciones": "En este nivel recibirás los primeros rayos de conocimiento sobre cómo la tecnología impulsa la sostenibilidad. Sigue las indicaciones de tu mentor, disfruta explorando con tu equipo y luego regresa para ingresar la palabra mágica y avanzar.",
+      "palabra_magica": "Palabra por definir",
+      "quiz": {
+        "pregunta": "",
+        "opciones": []
+      }
+    },
+    {
+      "titulo": "Amor para crecer",
       "tipo_insignia": "amor",
-      "descripcion": "Explora la pasión por la agricultura sostenible.",
+      "descripcion": "El amor está en todo lo que hacemos y nos ayuda a crecer. Por eso, es importante cultivarlo cada día con pequeñas dosis que nos impulsen a seguir.",
+      "instrucciones": "Llénate de amor y compártelo contigo y con los demás. Esto te ayudará a crecer y fortalecer lazos. Sigue a tu mentor y, al terminar, regresa con la palabra mágica para avanzar.",
+      "palabra_magica": "Gratitud",
+      "quiz": {
+        "pregunta": "",
+        "opciones": []
+      }
+    },
+    {
+      "titulo": "Regando para crecer",
+      "tipo_insignia": "agua",
+      "descripcion": "Bienvenido al nivel 8. Hoy aprenderás a usar la IA como tu asistente creativo. El secreto está en el equilibrio; Así como el exceso de riego daña las raíces, depender solo de la IA puede afectar tu pensamiento crítico.",
+      "instrucciones": "Escucha a tu mentor y absorbe su conocimiento. Luego, regresa al juego y responde la pregunta correctamente así avanzaras al siguiente nivel.",
       "palabra_magica": "",
       "quiz": {
-        "pregunta": "¿Qué significa tener un 'corazón verde'?",
+        "pregunta": "¿Cómo se llama la técnica para dar instrucciones precisas a una IA?",
         "opciones": [
-          {
-            "texto": "Tener un corazón enfermo",
-            "es_correcta": false
-          },
-          {
-            "texto": "Ser apasionado por la ecología y el medio ambiente",
-            "es_correcta": true
-          },
-          {
-            "texto": "Preferir el color verde",
-            "es_correcta": false
-          }
+          { "texto": "Lenguaje natural.", "es_correcta": false },
+          { "texto": "Programación básica.", "es_correcta": false },
+          { "texto": "Prompt Engenering.", "es_correcta": true }
         ]
+      }
+    },
+    {
+      "titulo": "El sol para crecer",
+      "tipo_insignia": "sol",
+      "descripcion": "Las plantas necesitan el sol para crecer; hoy recibirás rayos de conocimiento para nutrir tus experiencias y fortalecer tus saberes en la huerta.",
+      "instrucciones": "Estas en el nivel 9. Aquí descubrirás cómo nuestra huerta y entorno pueden aportar a los ODS y la importancia de suelos vivos para el planeta. Aprende jugando, sigue a tu mentor y construye la palabra mágica, luego vuelve e ingresala.",
+      "palabra_magica": "Palabra por definir",
+      "quiz": {
+        "pregunta": "",
+        "opciones": []
+      }
+    },
+    {
+      "titulo": "La música para la expansión",
+      "tipo_insignia": "amor",
+      "descripcion": "¡Felicidades! Ya estás a mitad de la Liga de Huerteros. Las plantas reaccionan a ondas sonoras, influyendo en su crecimiento y generando sonidos. Hoy, disfruta al oírlas expresarse a través de la música.",
+      "instrucciones": "Disfruta la música de las plantas. Recarga y sana con este abono musical y cuando el DJ te dé la palabra mágica, ingrésala aquí para avanzar.",
+      "palabra_magica": "Biosonificación",
+      "quiz": {
+        "pregunta": "",
+        "opciones": []
+      }
+    },
+    {
+      "titulo": "Agua para expandir y nutrir",
+      "tipo_insignia": "agua",
+      "descripcion": "Nivel 11: Al disolver nutrientes en el agua se potencia el riego y fortalece el crecimiento de las plantas. Los datos recolectados en la huerta son esos nutrientes que guiarán nuestras decisiones en ella.",
+      "instrucciones": "Riega tu plántula con el agua de remojo del arroz para fortalecer su sistema inmunológico. Junto a tu mentor, descubre lo que los datos te revelan. Vuelve y responde para avanzar.",
+      "palabra_magica": "",
+      "quiz": {
+        "pregunta": "¿Por qué son importantes los datos recolectados de la huerta?",
+        "opciones": [
+          { "texto": "Para que las plantas crezcan igual sin importar nada.", "es_correcta": false },
+          { "texto": "Para tomar decisiones basadas en evidencia.", "es_correcta": true },
+          { "texto": "Porque los grandes agricultores necesitan datos.", "es_correcta": false }
+        ]
+      }
+    },
+    {
+      "titulo": "Rayos de sol para expandir",
+      "tipo_insignia": "sol",
+      "descripcion": "El sol da vida, fortalece las plantas y aleja bichos. Los rayos de conocimiento de hoy serán clave para crecer en el bootcamp y en la vida, expandiendo saberes y nutriendo nuestro camino.",
+      "instrucciones": "Disfruta explorando el suelo de la huerta, descubirendo los bichos que la habitan y cuales son plaga o amigos. Cuando termines, vuelve aquí e ingresa la palabra mágica para avanzar.",
+      "palabra_magica": "Palabra por definir",
+      "quiz": {
+        "pregunta": "",
+        "opciones": []
+      }
+    },
+    {
+      "titulo": "Florecer con amor",
+      "tipo_insignia": "amor",
+      "descripcion": "Haz caminado en esta liga con total entrega,disposición y mucho amor; Así que es momento de celebrar para compartir con tus compañeros todo lo que han logrado  y florecer como huerteros empoderados y conscientes.",
+      "instrucciones": "Disfruta la actividad y celebra tu florecerimiento de esa versión que estás destinada a ser. Luego ingresa la palabra mágica para avanzar.",
+      "palabra_magica": "Florecer",
+      "quiz": {
+        "pregunta": "",
+        "opciones": []
+      }
+    },
+    {
+      "titulo": "Sol para florecer",
+      "tipo_insignia": "sol",
+      "descripcion": "En este nivel recibirás energía de sol para transformarte y florecer. Estos rayos de conocimiento te mostrarán cómo nos relacionamos con la tierra: mientras ella viva y florezca, nosotros también.",
+      "instrucciones": "Activa tus sentidos, reconecta con la tierra, comparte tu visión y pensar con tus compañeros y regresa al juego para responder la pregunta y avanzar.",
+      "palabra_magica": "",
+      "quiz": {
+        "pregunta": "¿Qué estamos haciendo en lectuhuerta para mejorar la relación con la tierra?",
+        "opciones": [
+          { "texto": "Labrar la tierra", "es_correcta": false },
+          { "texto": "No cubrimos el suelo", "es_correcta": false },
+          { "texto": "Construimos un suelo vivo", "es_correcta": false }
+        ]
+      }
+    },
+    {
+      "titulo": "Abonando para florecer",
+      "tipo_insignia": "abono",
+      "descripcion": "El abono nutre la tierra y fortalece las raíces, igual que un liderazgo inclusivo permite que cada quien aporte su talento y crezcamos juntas como comunidad. ",
+      "instrucciones": "Acepta el reto de tu mentor, vive la experiencia y reflexiona para abonar tu liderazgo. Luego vuelve al juego pon la palabra mágica para pasar el nivel.",
+      "palabra_magica": "Empoderamiento",
+      "quiz": {
+        "pregunta": "",
+        "opciones": []
+      }
+    },
+    {
+      "titulo": "Bienestar Clase Yoga",
+      "tipo_insignia": "amor",
+      "descripcion": "El agua es el elemento que da vida y permite que las plantas florezcan. Hoy aprenderás a usar la IA como tu asistente creativo. El secreto está en el equilibrio; Así como el exceso de riego daña las raíces, depender solo de la IA puede afectar tu pensamiento crítico.",
+      "instrucciones": "Escucha a tu mentor y absorbe su conocimiento.",
+      "palabra_magica": "Palabra por definir",
+      "quiz": {
+        "pregunta": "",
+        "opciones": []
+      }
+    },
+    {
+      "titulo": "Nutriendo para madurar",
+      "tipo_insignia": "agua",
+      "descripcion": "¡Ya casi cosechamos! El riego de hoy te nutre con práctica, para que compartas y apliques tus saberes, creando proyectos innovadores y con sentido.",
+      "instrucciones": "Hoy activaremos nuestra liga de huerteros y trabajaremos en equipo. Sigue a tu mentor, diviértete ensamblando los dispositivos y sorpréndete. Vuelve con la palabra mágica, ¡estás a nada de lograrlo! disfruta el proceso.",
+      "palabra_magica": "Fructificar",
+      "quiz": {
+        "pregunta": "",
+        "opciones": []
       }
     }
   ]
 }
+

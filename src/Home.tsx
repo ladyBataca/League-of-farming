@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 import { getStages, mapIconType } from './utils/stagesManager';
 
 function Home() {
-  const [currentStage, setCurrentStage] = useState(() => {
+  const [currentStage] = useState(() => {
     const savedStage = localStorage.getItem('currentStage')
     return savedStage ? parseInt(savedStage, 10) : 0
   })

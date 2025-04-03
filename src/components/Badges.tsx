@@ -1,6 +1,6 @@
 import { FaHeart, FaSun, FaSeedling, FaWater } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
-import { getBadgeCounts, BadgeCounts } from '../utils/stagesManager';
+import { getBadgeCounts } from '../utils/stagesManager';
 
 interface BadgeItem {
   label: string;
