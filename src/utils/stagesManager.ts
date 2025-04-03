@@ -14,6 +14,7 @@ export interface Stage {
   titulo: string;
   tipo_insignia: 'agua' | 'sol' | 'abono' | 'amor';
   descripcion: string;
+  instrucciones: string;
   palabra_magica: string;
   quiz: Quiz;
   // Additional UI state properties
@@ -88,7 +89,7 @@ export interface BadgeCounts {
 export const getBadgeCounts = (): BadgeCounts => {
   const { stages } = getStages();
   
-  // Initialize counts
+  // Inicializar conteos
   const counts: BadgeCounts = {
     agua: { total: 0, completed: 0 },
     sol: { total: 0, completed: 0 },
@@ -96,13 +97,19 @@ export const getBadgeCounts = (): BadgeCounts => {
     amor: { total: 0, completed: 0 }
   };
   
-  // Count stages by tipo_insignia
+  // Contar etapas por tipo_insignia
   stages.forEach(stage => {
     const type = stage.tipo_insignia;
-    counts[type].total += 1;
     
-    if (stage.completed) {
-      counts[type].completed += 1;
+    // Verificar si el tipo es válido antes de acceder a counts
+    if (counts[type]) {
+      counts[type].total += 1;
+      
+      if (stage.completed) {
+        counts[type].completed += 1;
+      }
+    } else {
+      console.warn(`Tipo de insignia no válido: ${type}`);
     }
   });
   

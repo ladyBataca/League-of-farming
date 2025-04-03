@@ -162,20 +162,21 @@ function StageDetail() {
         playerName={localStorage.getItem('playerName') || 'Player'} 
       />
       <div className="flex-1 flex flex-col items-center p-4">
-        <h1 className="text-3xl font-light text-center text-black mb-4">
+        <h1 className="text-3xl font-light text-center text-white mb-4">
           {stage.titulo}
         </h1>
-        
+        <div className="text-xl font-medium text-center text-white mb-4">
+          <p className="text-white mb-4">{stage.descripcion}</p>
+        </div>
         <div className="text-6xl mb-6">
           {getIcon(stage.tipo_insignia)}
         </div>
         
+        <div className="bg-white rounded-lg shadow-md p-6 w-full max-w-md mb-6">
         <h2 className="text-xl font-medium text-center text-black mb-4">
           Instrucciones para completar esta etapa
         </h2>
-        
-        <div className="bg-white rounded-lg shadow-md p-6 w-full max-w-md mb-6">
-          <p className="text-black mb-4">{stage.descripcion}</p>
+          <p className="text-black mb-4">{stage.instrucciones}</p>
           
           {stage.palabra_magica && (
             <div className="space-y-4 mt-6">

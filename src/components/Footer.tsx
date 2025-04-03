@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
             <div className="container mx-auto px-4">
                 <div className="flex flex-col items-center justify-center text-center text-sm text-gray-600 dark:text-gray-200 space-y-2">
                     <p>Proyecto Educativo creado con ❤️ por Liwaisi Tech y Rincón Verde</p>
-                    <p className="text-xs font-light text-white">League of Farmers es un proyecto de Código Abierto</p>
+                    <p className="text-xs font-light text-white">Liga de huerteros es un proyecto de Código Abierto</p>
                 </div>
 
             </div>
