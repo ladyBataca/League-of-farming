@@ -31,3 +31,7 @@ services:
     command: npm run dev
     stdin_open: true
     tty: true
+
+networks:
+  npm_app_network:
+    external: true
