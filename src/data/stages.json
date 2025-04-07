@@ -54,7 +54,7 @@
         "pregunta": "¿Cómo mide la humedad del suelo un sensor capacitivo?",
         "opciones": [
           { "texto": "Midiendo la resistencia eléctrica entre dos electrodos metálicos insertados en el suelo.", "es_correcta": false },
-          { "texto": "Midiendo los cambios en la capacitancia dieléctrica del suelo.", "es_correcta": true },
+          { "texto": "Midiendo los cambios en la capacitancia del suelo.", "es_correcta": true },
           { "texto": "Midiendo la temperatura del suelo y calculando la humedad basándose en la diferencia térmica.", "es_correcta": false }
         ]
       }
@@ -64,7 +64,7 @@
       "tipo_insignia": "sol",
       "descripcion": "El sol le dice a la semilla que es hora de crecer. Hoy entregaremos esos primeros rayos para que echen raíces tus nuevos conocimientos en sostenibilidad.",
       "instrucciones": "En este nivel recibirás los primeros rayos de conocimiento sobre cómo la tecnología impulsa la sostenibilidad. Sigue las indicaciones de tu mentor, disfruta explorando con tu equipo y luego regresa para ingresar la palabra mágica y avanzar.",
-      "palabra_magica": "Palabra por definir",
+      "palabra_magica": "Internet de las cosas",
       "quiz": {
         "pregunta": "",
         "opciones": []
@@ -101,7 +101,7 @@
       "tipo_insignia": "sol",
       "descripcion": "Las plantas necesitan el sol para crecer; hoy recibirás rayos de conocimiento para nutrir tus experiencias y fortalecer tus saberes en la huerta.",
       "instrucciones": "Estas en el nivel 9. Aquí descubrirás cómo nuestra huerta y entorno pueden aportar a los ODS y la importancia de suelos vivos para el planeta. Aprende jugando, sigue a tu mentor y construye la palabra mágica, luego vuelve e ingresala.",
-      "palabra_magica": "Palabra por definir",
+      "palabra_magica": "ODS",
       "quiz": {
         "pregunta": "",
         "opciones": []
@@ -121,7 +121,7 @@
     {
       "titulo": "Agua para expandir y nutrir",
       "tipo_insignia": "agua",
-      "descripcion": "Nivel 11: Al disolver nutrientes en el agua se potencia el riego y fortalece el crecimiento de las plantas. Los datos recolectados en la huerta son esos nutrientes que guiarán nuestras decisiones en ella.",
+      "descripcion": "Al disolver nutrientes en el agua se potencia el riego y fortalece el crecimiento de las plantas. Los datos recolectados en la huerta son esos nutrientes que guiarán nuestras decisiones en ella.",
       "instrucciones": "Riega tu plántula con el agua de remojo del arroz para fortalecer su sistema inmunológico. Junto a tu mentor, descubre lo que los datos te revelan. Vuelve y responde para avanzar.",
       "palabra_magica": "",
       "quiz": {
@@ -138,10 +138,14 @@
       "tipo_insignia": "sol",
       "descripcion": "El sol da vida, fortalece las plantas y aleja bichos. Los rayos de conocimiento de hoy serán clave para crecer en el bootcamp y en la vida, expandiendo saberes y nutriendo nuestro camino.",
       "instrucciones": "Disfruta explorando el suelo de la huerta, descubirendo los bichos que la habitan y cuales son plaga o amigos. Cuando termines, vuelve aquí e ingresa la palabra mágica para avanzar.",
-      "palabra_magica": "Palabra por definir",
+      "palabra_magica": "",
       "quiz": {
-        "pregunta": "",
-        "opciones": []
+        "pregunta": "¿Qué pocentajes de humedad determinan que hay exceso de agua?",
+        "opciones": [
+          { "texto": "Cuando la humedad es 50%.", "es_correcta": false },
+          { "texto": "Cuando la humedad es 70%.", "es_correcta": false },
+          { "texto": "Cuando la humedad esta entre 75% y 99%.", "es_correcta": true }
+        ]
       }
     },
     {
@@ -166,7 +170,7 @@
         "opciones": [
           { "texto": "Labrar la tierra", "es_correcta": false },
           { "texto": "No cubrimos el suelo", "es_correcta": false },
-          { "texto": "Construimos un suelo vivo", "es_correcta": false }
+          { "texto": "Construimos un suelo vivo", "es_correcta": true }
         ]
       }
     },
@@ -182,11 +186,11 @@
       }
     },
     {
-      "titulo": "Bienestar Clase Yoga",
+      "titulo": "Prepararndonos  para la cosecha",
       "tipo_insignia": "amor",
-      "descripcion": "El agua es el elemento que da vida y permite que las plantas florezcan. Hoy aprenderás a usar la IA como tu asistente creativo. El secreto está en el equilibrio; Así como el exceso de riego daña las raíces, depender solo de la IA puede afectar tu pensamiento crítico.",
-      "instrucciones": "Escucha a tu mentor y absorbe su conocimiento.",
-      "palabra_magica": "Palabra por definir",
+      "descripcion": "Es momento de prepararnos para la cosecha, así que sintamos todo ese amor y conexión con la tierra a través de nuestro chakra raíz.",
+      "instrucciones": "Déjate guiar, respira consciente y practica las posturas de yoga para sentir como la tierra te sostiene, recibir todo lo que sos y el amor tan grande que te entrega al cuidarla. Luego vuelve al juego y pon la palabra mágica para avanzar de nivel.",
+      "palabra_magica": "Chakra",
       "quiz": {
         "pregunta": "",
         "opciones": []
@@ -198,6 +202,28 @@
       "descripcion": "¡Ya casi cosechamos! El riego de hoy te nutre con práctica, para que compartas y apliques tus saberes, creando proyectos innovadores y con sentido.",
       "instrucciones": "Hoy activaremos nuestra liga de huerteros y trabajaremos en equipo. Sigue a tu mentor, diviértete ensamblando los dispositivos y sorpréndete. Vuelve con la palabra mágica, ¡estás a nada de lograrlo! disfruta el proceso.",
       "palabra_magica": "Fructificar",
+      "quiz": {
+        "pregunta": "",
+        "opciones": []
+      }
+    },
+    {
+      "titulo": "Recibiendo amor para la cosecha",
+      "tipo_insignia": "amor",
+      "descripcion": "¡Llegó la hora! Luego de esta merecida pausa,  activa tu cuerpo, porque la cosecha viene abundante.",
+      "instrucciones": "Estás a un paso de lograrlo huertero,estira tu cuerpo y calienta motores porque los frutos de tu trabajo maduraron y la cosecha toca  a la puerta. Cuando termines de estirar, vuelve con la palabra mágica y avanza a ¡la cosecha!",
+      "palabra_magica": "Cosecha",
+      "quiz": {
+        "pregunta": "",
+        "opciones": []
+      }
+    },
+    {
+      "titulo": "Huerteros a la cosecha",
+      "tipo_insignia": "agua",
+      "descripcion": "¡Lo lograste Felicidades! Ahora eres un huertero experimentado y lo mejor, descubriste que eres esa semilla mágica, que con amor, unión, conocimientos y fortaleza brotas para crear y construir de la mano. Esperamos que hayas disfrutado el viaje.",
+      "instrucciones": "Sigue a tu mentor y trabaja con  tu equipo para que coseches y veas el fruto de todo el esfuerzo hasta acá. Vuelve con la palabra mágica, para terminar el juego y recibir el merecido reconocimiento a tu ardua labor. Gracias!",
+      "palabra_magica": "Liga de huerteros",
       "quiz": {
         "pregunta": "",
         "opciones": []
