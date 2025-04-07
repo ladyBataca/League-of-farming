@@ -52,7 +52,7 @@ function Home() {
   return (
     <>
       <Resume 
-        title="League of Farmers" 
+        title="Liga De Huerteros" 
         playerName={localStorage.getItem('playerName') || 'Player'} 
       />
       <div className="h-full bg-gray-200">

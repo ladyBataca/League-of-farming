@@ -7,7 +7,7 @@ interface ResumeProps {
 }
 
 const Resume = ({ 
-  title = "League of Farmers", 
+  title = "Liga De Huerteros", 
   playerName = "Liwaisi Student" 
 }: ResumeProps) => {
   return (

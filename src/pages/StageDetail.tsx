@@ -173,7 +173,7 @@ function StageDetail() {
   return (
     <div className="min-h-screen flex flex-col">
       <Resume 
-        title="League of Farmers" 
+        title="Liga De Huerteros" 
         playerName={localStorage.getItem('playerName') || 'Player'} 
       />
       <div className="flex-1 flex flex-col items-center p-4">

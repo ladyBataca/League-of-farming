@@ -3,7 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import html2canvas from 'html2canvas';
 import { useRef, useEffect, useState } from 'react';
 import { getStages } from '../utils/stagesManager';
-const awardImageUrl = '/images/award.png';
+const awardImageUrl = '/images/logoHuertics.png';
+const logoliwaisi = '/images/Liwaisi.png';
+const logoRincon = '/images/rinconVerde.png';
 
 const Diploma = () => {
   const navigate = useNavigate();
@@ -64,21 +66,28 @@ const Diploma = () => {
         className="relative w-full bg-white p-2 rounded-lg shadow-2xl border-8 border-green-800"
       >
         {/* Header */}
-        <div className="text-center mb-1">
+        <div className="text-center mb-4">
           <h1 className="text-4xl font-light text-green-800 tracking-wide">
             Liwaisi Tech y Rincón Verde
           </h1>
-          <img 
-            src={awardImageUrl}
-            alt="Award" 
-            className="w-40 h-40 mx-auto mb-1"
-          />
+          <div className="flex justify-center space-x-4 mt-4">
+            <img 
+              src={logoliwaisi}
+              alt="Award" 
+              className="w-40 h-40" 
+            />
+            <img 
+              src={logoRincon}
+              alt="Award" 
+              className="w-40 h-40" 
+            />
+          </div>
         </div>
 
         {/* Certificate Content */}
         <div className="text-center space-y-2">
           <p className="text-sm text-gray-700">
-            Certifican que:
+           Otorgan la presente certificación a:
           </p>
 
           <h2 className="text-4xl font-light text-green-600 my-6 tracking-wide">
@@ -86,20 +95,16 @@ const Diploma = () => {
           </h2>
 
           <p className="text-sm text-gray-700 tracking-wide px-4">
-            Ha completado todas las etapas de sostenibilidad enseñadas en la edición #1 de
+            Por su participación activa y compromiso demostrado durante el desarrollo de la edicion #1 del
           </p>
 
           <h3 className="text-2xl font-light text-green-800 tracking-wide">
-            Bootcamp Huertic's
+          BOOTCAMP HUERTICS
           </h3>
-
-          {/* QR Code Placeholder */}
-          <div className="w-32 h-32 bg-gray-200 mx-auto my-4 flex items-center justify-center">
-            <span className="text-gray-500">QR Code</span>
-          </div>
 
           {/* Date */}
           <p className="text-sm text-gray-700 tracking-wide mt-8 mb-2">
+            Fecha de emisión: 
             {new Date().toLocaleDateString('es-ES', { 
               day: 'numeric',
               month: 'long', 
@@ -108,6 +113,16 @@ const Diploma = () => {
               `${day} de ${month.charAt(0).toUpperCase() + month.slice(1)}`
             )}
           </p>
+          <p className="text-sm text-gray-700 tracking-wide px-4">
+            Duración del Bootcamp: 21 horas
+          </p>
+        </div>
+        <div>
+        <img 
+            src={awardImageUrl}
+            alt="Award" 
+            className="w-40 h-40 mx-auto mb-1"
+          />
         </div>
       </div>
 
